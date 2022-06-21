@@ -3,6 +3,17 @@ const sectBtns = document.querySelectorAll('.controlls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 
+//To set the experience dynamically
+window.onload = function() {
+  
+	dt1 = new Date(2021,8,25);
+	dt2 = new Date();
+    var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+	diff /= (60 * 60 * 24 * 7 * 4);
+	document.getElementById('experience').innerHTML = Math.abs(Math.round(diff));
+    
+
+};
 
 function PageTransitions() {
     //Button click active class
@@ -47,5 +58,17 @@ function PageTransitions() {
 PageTransitions();
 
 function SendMail() {
-    alert('Under Construction!! ');
+    alert('Under Construction!!');
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username : "pavanramesh4561@gmail.com",
+        Password : "Pavan@4561",
+        To : 'r.pavann411@gmail.com',
+        From : "pavanramesh4561 @gmail.com",
+        Subject : "Helllo World",
+        Body : "This is a test email",
+        }).then(
+            message => alert("mail sent successfully")
+        );
 }
+
