@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 
 <body class="main-content">
@@ -20,12 +21,12 @@
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/1-removebg-preview.png" alt="">
+                    <img src="img/IMG_1341.jpg" alt="">
                 </div>
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, I'm <span>Pavan Kumar.</span> A Software Engineer.
+                    Hi, I'm <span>Pavan Kumar.</span>  Software Engineer.
                 </h1>
                 <p>
                     Currently residing in Bengaluru, passionate about solving real life problems using technology.
@@ -68,7 +69,7 @@
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">8</p>
+                            <p class="large-text" id="experience">8</p>
                             <p class="small-text">Months of <br /> experience</p>
                         </div>
                     </div>
@@ -128,6 +129,16 @@
             </div>
             <h4 class="stat-title">My Timeline</h4>
             <div class="timeline">
+				<div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">May 2022 - Present</p>
+                    <h5>Associate Developer<span> - SAP SuccessFactors</span></h5>
+                    <p>
+                        Working as an JAVA Backend Developer.
+                    </p>
+                </div>
                 <div class="timeline-item">
                     <div class="tl-icon">
                         <i class="fas fa-briefcase"></i>
@@ -320,7 +331,7 @@
                                     <span>Email</span>
                                 </div>
                                 <p>
-                                    <span>: r.pavann411@gmail.com</span>
+                                    <span>: <a href="mailto: r.pavann411@gmail.com">r.pavann411@gmail.com</a></span>
                                 </p>
                             </div>
                             <div class="contact-item">
@@ -334,7 +345,7 @@
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
+                                    <i class="fas fa-phone"></i>
                                     <span>Mobile Number</span>
                                 </div>
                                 <p>
@@ -353,22 +364,26 @@
                         </div>
                         <div class="contact-icons">
                             <div class="contact-icon">
-                                <a href="https://www.facebook.com" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
+                                <a href="https://www.linkedin.com/in/pavan-kumar-84550418b/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
                                 </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" target="_blank">
+                                
+                                <a href="https://github.com/pavan-r411" target="_blank">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
+
+                                <a href="https://wa.me/+918762383528" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
                                 </a>
+
+                                <a href="https://www.facebook.com/r.pavans7" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="right-contact">
+                    <!-- <div class="right-contact">
                         <form action="" class="contact-form">
                             <div class="input-control i-c-2">
                                 <input type="text" required placeholder="YOUR NAME">
@@ -387,7 +402,7 @@
                                 </a>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -403,19 +418,26 @@
         <div class="control control-3" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
         </div>
-        <!-- <div class="control control-4" data-id="blogs">
-            <i class="far fa-newspaper"></i>
-        </div> -->
+        
         <div class="control control-5" data-id="contact">
             <i class="fas fa-envelope-open"></i>
         </div>
     </div>
 
+    <!-- To include the another html file -->
+    <!-- <div w3-include-html="html/menu.html"></div> 
+    <script>
+        w3IncludeHTML();
+    </script> -->
+    
+    <div id="DivContent"></div>
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
 
     <script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
 </body>
 
 </html>
