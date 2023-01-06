@@ -10,7 +10,7 @@ window.onload = function() {
 	dt2 = new Date();
     var diff =(dt2.getTime() - dt1.getTime()) / 1000;
 	diff /= (60 * 60 * 24 * 7 * 4);
-	document.getElementById('experience').innerHTML = Math.abs(Math.round(diff));
+	document.getElementById('experience').innerHTML = parseInt((Math.abs(Math.round(diff)))/12)+"  +";
     
 
 };
